@@ -1,0 +1,130 @@
+@tailwind base;
+
+@tailwind components;
+
+.input {
+   appearance: none;
+   display: block; 
+   background: bg-grey-lighter;
+   color: text-grey-darker;
+   border: border-grey-lighter rounded py-3 px-4 leading-tight;
+}
+
+.input:focus {
+  outline: none;
+  background: white;
+  border:grey;
+}
+
+.select {
+  appearance: none py-3 px-4 pr-8 block w-full bg-grey-lighter border border-grey-lighter text-grey-darker rounded leading-tight;
+   -webkit-appearance: none;
+}
+
+.select:focus {
+  outline: none;
+  background: white;
+  border:grey;
+}
+
+.link {
+  text-decoration: no-underline;
+}
+
+.link-grey {
+  text-anchor: grey-dark;
+  color: rgba(0,0,0,0.40);
+}
+
+.link-grey:hover {
+  text-decoration: none;
+  color:  rgba(0,0,0,0.40);
+}
+.link-grey b{
+  color: chocolate;
+}
+aside{
+  width: 10%;
+  float: left;
+  min-height: 600px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(46, 6, 6, 0.4) 0%, rgba(48, 7, 1, 0.4) 120%) #984357; 
+ background-blend-mode: multiply,multiply;
+  opacity: 0.6;
+  transition:0.8s;
+  -webkit-transition:0.8s;
+  -moz-transition:0.8s;
+  -ms-transition:0.8s;
+  -o-transition:0.8s;
+  border-right: 3px solid #a57e00;
+}
+header{
+  background-image: linear-gradient(120deg, #65b0f6 0%, #9185fd 100%);
+  width: 100%;
+}
+.titles{
+  margin-left: 50px;
+  color: #984357;
+}
+.titles b{
+  margin-right: 100px;
+}
+strong b{
+  margin-right: 100px
+}
+.signout{
+  color: rgb(255, 145, 0);
+}
+.logo-text{
+  font-size: 30px;
+  color: rgb(8, 248, 116);
+  font-family: Verdana;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bolder;
+}
+.logo-text b{
+  color: rgb(156, 153, 151);
+  border-top: 3px dotted rgb(8, 248, 116);
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.logo-text:hover{
+  text-decoration: none;
+  opacity: 0.5;
+  color:orangered;
+}
+.signinbtn{
+  background-color:#1488d6;
+}
+.signupbtn{
+  background-color: #1488d6;
+  color:white;
+}
+.signinbtn:hover,.signupbtn:hover{
+  text-decoration: none;
+  background-color: #1488d6;
+  opacity: 0.4;
+  padding: 10px;
+}
+.signout:hover{
+  text-decoration: none;
+}
+.search{
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border: 1px solid #b89111;
+  background-color: transparent;
+  color: aliceblue
+}
+.newcustomer{
+  stroke: aqua;
+  box-shadow: rgba(0, 0, 0, 0.986);
+  border: 1px solid rgba(0, 0, 0, 0.808);
+}
+@tailwind utilities;
